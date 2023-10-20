@@ -12,7 +12,7 @@ Bonus (non opzionale):
 organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati.
 */
 
-require __DIR__ . '/Models/product.php';
+require __DIR__ . '/Models/Product.php';
 require __DIR__ . '/Models/alimentation.php';
 require __DIR__ . '/Models/toys.php';
 require __DIR__ . '/Models/kennel.php';
@@ -31,16 +31,27 @@ require __DIR__ . '/db.php';
 </head>
 <body>
 
-
-    <div class="container">
-        <h1></h1>
+    <div class="container text-center">
+        <h1>Pet's Shop</h1>
         <div class="row">
-            
-            <div class="col">
-                <div class="card">
-
+            <?php foreach ($products as $product) : ?>
+                <div class="col-6 g-3">
+                    <div class="card p-3 text-start">
+                        <div>
+                            <h2>Pet Type: <?php echo $product->pet; ?></h2>
+                            <p><?php echo $product->kibble; ?></p>
+                        </div>
+                        <div>
+                            <h3>Price: <?php echo $product->price; ?> €</h3>
+                            <p><?php echo $product->kennel; ?></p>
+                        </div>
+                        <div>
+                            <h3>Product: <?php echo $product->product; ?></h3>
+                            <p><?php echo $product->toy; ?></p>
+                        </div>    
+                    </div>
                 </div>
-            </div>
+            <?php endforeach ?>
         </div>
     </div>
     
