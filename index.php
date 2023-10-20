@@ -12,7 +12,7 @@ Bonus (non opzionale):
 organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati.
 */
 
-
+require __DIR__ . '/Models/product.php';
 
 ?>
 
