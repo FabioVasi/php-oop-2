@@ -34,6 +34,7 @@ var_dump($commerce);
     <div class="container">
         <h1></h1>
         <div class="row">
+            
             <div class="col">
                 <div class="card">
 
