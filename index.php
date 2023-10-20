@@ -13,10 +13,8 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 */
 
 require __DIR__ . '/Models/product.php';
+require __DIR__ . '/db.php';
 
-$commerce = new Commerce('Dog', '29,99', 'Toys');
-
-var_dump($commerce);
 
 ?>
 
