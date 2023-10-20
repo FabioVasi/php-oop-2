@@ -1,14 +1,13 @@
 <?php
 
 class Commerce {
-    public $name;
-    public $price;
     public $pet;
-    public function __construct($name, $price, $pet) {
-        $this->name = $name;
-        $this->price = $price;
+    public $price;
+    public $product;
+
+    public function __construct($pet, $price, $product) {
         $this->pet = $pet;
+        $this->price = $price;
+        $this->product = $product;
     }
 }
-
-var_dump($name, $price, $pet);

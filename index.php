@@ -14,6 +14,10 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 
 require __DIR__ . '/Models/product.php';
 
+$commerce = new Commerce('Dog', '29,99', 'Toys');
+
+var_dump($commerce);
+
 ?>
 
 <!DOCTYPE html>
@@ -26,12 +30,13 @@ require __DIR__ . '/Models/product.php';
 </head>
 <body>
 
+
     <div class="container">
         <h1></h1>
         <div class="row">
             <div class="col">
                 <div class="card">
-                    
+
                 </div>
             </div>
         </div>
