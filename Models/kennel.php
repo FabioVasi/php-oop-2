@@ -6,8 +6,8 @@ class Kennel extends Commerce {
     public $depth;
     public $weight;
 
-    public function __construct($pet, $price, $product, $width, $height, $depth, $weight) {
-        parent::__construct($pet, $price, $product);
+    public function __construct($pet, $price, $product, $image, $width, $height, $depth, $weight) {
+        parent::__construct($pet, $price, $product, $image);
         $this->width = $width;
         $this->height = $height;
         $this->depth = $depth;
