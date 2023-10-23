@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__ . '/../Traits/traits.php';
-
 class Commerce {
     public $pet;
     public $price;

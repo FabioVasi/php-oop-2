@@ -1,8 +1,10 @@
 <?php
 
-require __DIR__ . '/../Traits/traits.php';
+require_once ROOT . '/Traits/traits.php';
 
 class Toys extends Commerce {
+    
+    use Materials;
     
     public $material;
     public $weight;
