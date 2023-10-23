@@ -12,7 +12,7 @@ Bonus (non opzionale):
 organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati.
 */
 define('ROOT', __DIR__);
-
+define('DEBUG', false);
 $debug = true; // cambiate in true e false in base se volete o meno vedere gli errori
 if ($debug == true) {
     ini_set('display_errors', 1); // imposta il file php.ini a mostrare gli errori
@@ -48,7 +48,7 @@ require __DIR__ . '/db.php';
                         </div>
                         <div>
                             <h3>Product: <?php echo $product->product; ?></h3>
-                            <p><?php echo is_a($product, 'Toys') ? $product->material : ''; ?></p>
+                            <p><?php echo is_a($product, 'Toys') ? $product->getDetails() : ''; ?></p>
                         </div>    
                     </div>
                 </div>
