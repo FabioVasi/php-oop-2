@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/../Traits/traits.php';
+
 class Alimentation extends Commerce {
     public $kilograms;
 
@@ -9,7 +11,4 @@ class Alimentation extends Commerce {
         $this->kilograms = $kilograms;
     }
 
-    public function getQuantity() {
-        return $this->kilograms;
-    }
 }

@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/../Traits/traits.php';
+
 class Kennel extends Commerce {
     public $width;
     public $height;
@@ -14,7 +16,4 @@ class Kennel extends Commerce {
         $this->weight = $weight;
     }
 
-    public function getDimension() {
-        return $this->width .  $this->height . $this->depth . $this->weight;
-    }
 } 

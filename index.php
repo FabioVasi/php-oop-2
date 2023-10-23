@@ -12,6 +12,7 @@ Bonus (non opzionale):
 organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati.
 */
 
+require __DIR__ . '/Traits/traits.php';
 require __DIR__ . '/Partials/Header.php';
 require __DIR__ . '/Partials/Footer.php';
 require __DIR__ . '/Models/Product.php';

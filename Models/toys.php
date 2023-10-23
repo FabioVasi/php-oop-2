@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/../Traits/traits.php';
+
 class Toys extends Commerce {
     
     public $material;
@@ -11,7 +13,4 @@ class Toys extends Commerce {
         $this->weight = $weight;
     }
 
-    public function getDetails() {
-        return $this->material . $this->weight;
-    }
 }
